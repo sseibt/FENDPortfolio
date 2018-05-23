@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Comptabile">
+	<meta content="My Front-End Development Portfolio" name="description">
+	<meta content="HTML, CSS, Javascript, Flexbox, Bootstrap, Responsive, Web Development, Portfolio" name="keywords">
+	<meta content="Sara Seibt" name="author">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>FEND Portfolio Mockup</title>
+	<link href="css/styles.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<script src="js/animation.js">
+	</script>
+</head>
+<body>
+	<!-- The header row -->
+	<header class="header">
+		<div class="header_logo">
+			<a class="logo_link" href="https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001" target="_blank"><img alt="Udacity Logo" class="header_img responsive-img" src="images/logo.png"></a>
+		</div>
+		<div class="hdr_text">
+			<h1 class="hdr_name">SARA SEIBT</h1>
+			<h5 class="hdr_subtitle">TECHNICAL MARKETING NINJA</h5>
+		</div>
+	</header>
+	<hr>
+	<main class="content">
+		<!-- Hero image -->
+		<img alt="Main Site Image" class="responsive-img hero_img" src="images/responsive_web_design_hero.png">
+        <!-- Featured Area -->
+		<section class="featured_work">
+			<h2 class="content_hdr">FEATURED SKILLS</h2>
+               <!-- The row for featured pictures, title, and subtext -->
+			<div class="row">
+				<div class="featured_container .container-fluid">
+					<!-- Div container for individual skill -->
+					<!-- & Divs for animation -->
+					<div class="flip-container">
+						<div class="flipper">
+							<div class="featured_item">
+								<div class="front">
+									<img alt="HTML5 logo" class="featured_img responsive-img" src="images/html5.svg">
+									<h3 class="featured_header">HTML5</h3>
+								</div>
+								<div class="back">
+									<p class="featured_text"><a class="featured_link" href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5">The latest update to the web's language</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flip-container">
+						<div class="flipper">
+							<div class="featured_item">
+								<div class="front">
+									<img alt="CSS logo" class="featured_img responsive-img" src="images/css.png">
+									<h3 class="featured_header">CSS3</h3>
+								</div>
+								<div class="back">
+									<p class="featured_text"><a class="featured_link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3">The latest styling for your website</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flip-container">
+						<div class="flipper">
+							<div class="featured_item">
+								<div class="front">
+									<img alt="Javascript logo" class="featured_img responsive-img" id="js-skill" src="images/Javascript.png">
+									<h3 class="featured_hdr">JAVASCRIPT</h3>
+								</div>
+								<div class="back">
+									<p class="featured_text"><a class="featured_link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">The web's favorite script language</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+</body>
+</html>
