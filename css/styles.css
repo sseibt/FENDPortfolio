@@ -1,0 +1,251 @@
+/* Remove inherit values set by browser or device defualt to all elements */
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+	margin: 10px;
+	padding: 0;
+}
+
+/* main element basic styling */
+
+body {
+	background-color: inherit;
+	font-family: "Source Sans Pro", sans-serif;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h5 {
+	color: #7d97ad;
+}
+
+h2 {
+	opacity: .4;
+}
+
+p {
+	padding: 5px
+}
+
+hr {
+	max-width: 100%!important;
+	background-color: #5f5f5f;
+}
+
+a {
+	text-decoration: underline;
+	color: black;
+}
+
+a:hover {
+	cursor: pointer;
+	color: #02b3e4;
+}
+
+.featured_container {
+	margin: auto;
+}
+
+/* mobile first responsive styling */
+
+.header {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.responsive-img,
+#js-skill {
+	max-width: 75%;
+  justify-content: space-around;
+}
+
+.featured_work {
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+.content_hdr,
+.featured_item {
+	text-align: center;
+	align-content: center;
+}
+
+.featured_item {
+	margin: 20px 0;
+	justify-content: space-around;
+}
+
+.featured_img {
+	width: 100%;
+	height: auto;
+	align-content: space-between;
+}
+
+.header_img {
+	width: 60px;
+	height: auto;
+	padding: 5px 0px 0px 5px;
+}
+
+/* Animation Cards */
+
+.flip-container {
+	perspective: 1000px;
+}
+
+/* flip the pane when hovered */
+
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+	transform: rotateY(180deg);
+}
+
+.flip-container,
+.front,
+.back {
+	width: 320px;
+	height: 480px;
+}
+
+/* flip speed goes here */
+
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+
+.front,
+.back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+
+.back {
+	transform: rotateY(180deg);
+}
+
+/* Begin Media Queries */
+
+@media screen and (max-width: 699px) {
+	h5,
+	p {
+		font-size: 4vw;
+	}
+
+	.featured_img {
+		size: 5vw;
+	}
+	#js-skill {
+		width: 80%;
+		height: auto;
+	}
+}
+
+@media screen and (min-width: 480px) {
+	h1,
+	h2,
+	h3 {
+		font-size: 5vw;
+	}
+
+	h5,
+	p {
+		font-size: 3vw;
+	}
+
+  .header_img {
+    width: 50px;
+    height: auto;
+  }
+
+  .row {
+    max-width: 100%;
+  }
+
+	.featured_img,
+  .responsive-img {
+		width: 100%;
+    height: auto;
+    justify-content: space-between;
+	}
+
+  .featured_hdr {
+    justify-content: center;
+  }
+
+}
+
+@media screen and (min-width: 720px) {
+	.header {
+		justify-content: space-between;
+		margin: 0 auto 30px;
+		text-align: left;
+	}
+	.hero_img {
+		width: 75%;
+		float: right;
+		clear: right;
+	}
+	.hdr_text {
+		text-align: right;
+		margin-right: 30px;
+		margin-top: auto;
+	}
+	.header_img {
+		height: auto;
+		width: 90px;
+		padding-top: 30px;
+		padding-left: 20px;
+	}
+	.featured_work {
+		clear: both;
+	}
+	.featured_img {
+		width: 75%;
+		height: auto;
+	}
+	.content_hdr {
+		text-align: left;
+	}
+	.featured_container {
+		margin: 30px auto 0;
+	}
+	.header,
+	.featured_container {
+		display: flex;
+		max-width: 1440px;
+	}
+	.featured_item {
+		margin: 20px 20px 20px 0;
+	}
+	.featured_item:last-child {
+		margin-left: 0;
+	}
+	h5,
+	p {
+		font-size: 2vw;
+	}
+	#js-skill {
+		width: 65%;
+		height: auto;
+	}
+}
